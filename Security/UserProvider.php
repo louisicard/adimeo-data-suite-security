@@ -3,6 +3,7 @@
 namespace AdimeoDataSuite\Bundle\ADSSecurityBundle\Security;
 
 use AdimeoDataSuite\Bundle\CommonsBundle\Index\IndexManager;
+use Symfony\Component\Security\Core\Exception\UsernameNotFoundException;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
 
@@ -36,7 +37,7 @@ class UserProvider implements UserProviderInterface
 
   /**
    * @param string $username
-   * @return User
+   * @return UserInterface
    */
   private function getUser($username) {
     try {
