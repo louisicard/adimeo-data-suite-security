@@ -1,0 +1,18 @@
+{
+	"name": "adimeo-data-suite/security",
+  "type": "symfony-bundle",
+  "autoload": {
+    "psr-4": { "AdimeoDataSuite\\Bundle\\SecurityBundle\\": "" }
+  },
+  "require": {
+    "symfony/framework-bundle": "*",
+    "symfony/security": "*",
+    "adimeo-data-suite/commons": "dev-master"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/louisicard/adimeo-data-suite-commons"
+    }
+  ]
+}
