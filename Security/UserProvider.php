@@ -17,17 +17,34 @@ class UserProvider implements UserProviderInterface
 
   public function loadUserByUsername($username)
   {
-    // TODO: Implement loadUserByUsername() method.
+    $user = $this->getUser($username);
+    if($user == null){
+      throw new UsernameNotFoundException();
+    }
+    return $user;
   }
 
   public function refreshUser(UserInterface $user)
   {
-    // TODO: Implement refreshUser() method.
+    return $this->getUser($user->getUsername());
   }
 
   public function supportsClass($class)
   {
-    // TODO: Implement supportsClass() method.
+    return $class == User::class;
+  }
+
+  /**
+   * @param string $username
+   * @return User
+   */
+  private function getUser($username) {
+    try {
+      return $this->indexManager->findObject('user', $username);
+    }
+    catch(\Exception $ex) {
+      return null;
+    }
   }
 
 }
