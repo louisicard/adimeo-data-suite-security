@@ -1,5 +1,5 @@
 services:
   adimeo_data_suite_user_provider:
-    class: AdimeoDataSuite\Bundle\SecurityBundle\Security\UserProvider
+    class: AdimeoDataSuite\Bundle\ADSSecurityBundle\Security\UserProvider
     arguments: ["@adimeo_data_suite_es_server"]
     public: true

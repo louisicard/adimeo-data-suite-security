@@ -1,6 +1,6 @@
 <?php
 
-namespace AdimeoDataSuite\Bundle\SecurityBundle;
+namespace AdimeoDataSuite\Bundle\ADSSecurityBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

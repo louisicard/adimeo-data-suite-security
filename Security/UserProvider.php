@@ -1,6 +1,6 @@
 <?php
 
-namespace AdimeoDataSuite\Bundle\SecurityBundle\Security;
+namespace AdimeoDataSuite\Bundle\ADSSecurityBundle\Security;
 
 use AdimeoDataSuite\Bundle\CommonsBundle\Index\IndexManager;
 use Symfony\Component\Security\Core\User\UserInterface;

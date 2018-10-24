@@ -1,6 +1,6 @@
 <?php
 
-namespace AdimeoDataSuite\Bundle\SecurityBundle\DependencyInjection;
+namespace AdimeoDataSuite\Bundle\ADSSecurityBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
