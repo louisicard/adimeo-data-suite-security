@@ -3,9 +3,10 @@
 namespace AdimeoDataSuite\Bundle\SecurityBundle\Security;
 
 
+use AdimeoDataSuite\Bundle\CommonsBundle\Model\PersistentObject;
 use Symfony\Component\Security\Core\User\UserInterface;
 
-class User implements UserInterface
+class User extends PersistentObject implements UserInterface
 {
 
   /**
@@ -171,7 +172,7 @@ class User implements UserInterface
     return $this->getUsername();
   }
 
-  static function getType()
+  public function getType()
   {
     return 'user';
   }
