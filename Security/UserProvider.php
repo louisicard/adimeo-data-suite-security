@@ -2,7 +2,7 @@
 
 namespace AdimeoDataSuite\Bundle\ADSSecurityBundle\Security;
 
-use AdimeoDataSuite\Bundle\CommonsBundle\Index\IndexManager;
+use AdimeoDataSuite\Index\IndexManager;
 use Symfony\Component\Security\Core\Exception\UsernameNotFoundException;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Core\User\UserProviderInterface;

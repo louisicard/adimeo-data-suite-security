@@ -3,7 +3,7 @@
 namespace AdimeoDataSuite\Bundle\ADSSecurityBundle\Security;
 
 
-use AdimeoDataSuite\Bundle\CommonsBundle\Model\PersistentObject;
+use AdimeoDataSuite\Model\PersistentObject;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 class User extends PersistentObject implements UserInterface
