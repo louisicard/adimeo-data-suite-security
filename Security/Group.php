@@ -31,10 +31,6 @@ class Group extends PersistentObject
    * @var array
    */
   private $dictionaries;
-  /**
-   * @var array
-   */
-  private $parameters;
 
   /**
    * Group constructor.
@@ -46,7 +42,7 @@ class Group extends PersistentObject
    * @param array $dictionaries
    * @param array $parameters
    */
-  public function __construct($id, $name, array $indexes, array $datasources, array $matchingLists, array $dictionaries, array $parameters)
+  public function __construct($id, $name, array $indexes, array $datasources, array $matchingLists, array $dictionaries)
   {
     $this->id = $id;
     $this->name = $name;
@@ -54,7 +50,6 @@ class Group extends PersistentObject
     $this->datasources = $datasources;
     $this->matchingLists = $matchingLists;
     $this->dictionaries = $dictionaries;
-    $this->parameters = $parameters;
   }
 
   /**
@@ -151,22 +146,6 @@ class Group extends PersistentObject
   public function setDictionaries($dictionaries)
   {
     $this->dictionaries = $dictionaries;
-  }
-
-  /**
-   * @return array
-   */
-  public function getParameters()
-  {
-    return $this->parameters;
-  }
-
-  /**
-   * @param array $parameters
-   */
-  public function setParameters($parameters)
-  {
-    $this->parameters = $parameters;
   }
 
   function getType()
